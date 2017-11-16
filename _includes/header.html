@@ -1,0 +1,21 @@
+
+<title>{% if page.title %} {{ page.title }} {% endif %}</title>
+
+<!-- css -->
+{% if page.layout == 'post' %}
+<link rel="stylesheet" href="{{ site.url }}/assets/css/markdown.css">
+<link rel="stylesheet" href="{{ site.url }}/assets/css/rouge.css">
+{% endif %}
+
+<link rel="stylesheet" href="{{ site.url }}/assets/vendor/octicons/octicons/octicons.css">
+<link rel="stylesheet" href="{{ site.url }}/assets/vendor/primer-css/css/primer.css">
+<link rel="stylesheet" href="{{ site.url }}/assets/css/common.css">
+<link rel="stylesheet" href="{{ site.url }}/assets/css/page.css">
+
+{% for css in page.css %}
+  <link rel="stylesheet" href="{{ site.url }}/assets/css/{{css}}">
+{% endfor %}
+
+<!-- js -->
+<script src="{{ site.url }}/assets/vendor/jquery/dist/jquery.min.js"></script>
+<script src="{{ site.url }}/assets/js/jquery-ui.js"></script>

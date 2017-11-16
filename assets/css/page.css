@@ -1,0 +1,16 @@
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.pagination {
+    padding: 20px 0
+}
+
+.pagination a.active {
+    background: #337ab7;
+    border-color: #337ab7;
+    z-index: 2;
+    color: #fff;
+    cursor: default
+}

@@ -1,0 +1,12 @@
+
+
+title : xPorter
+
+# Build settings
+
+markdown: kramdown
+kramdown:
+    input: GFM
+highlighter: rouge
+
+paginate: 2
