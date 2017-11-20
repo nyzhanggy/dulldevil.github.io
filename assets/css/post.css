@@ -34,3 +34,64 @@
 .post-directory a.on {
     color: #4183c4;
 }
+
+
+.post-header{
+  margin-top: 20px;
+}
+
+.post-header {
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+}
+.post-header .title {
+  text-align: center;
+}
+
+.post-header .date {
+  text-align: center;
+  margin:  10px;
+  color: #999999
+}
+
+.post-header a {
+  color: #333;
+}
+
+.post-header a:hover {
+  color: #333;
+  text-decoration: none;
+}
+
+.home:before {
+  position: absolute;
+  content: " ";
+  border: transparent 14px solid;
+  border-width: 13px 8px ;
+  border-right-color: #CCC;
+  top: 1px; left: -16px;
+  height: 0;
+  width: 0;
+}
+.home{ position: relative;
+  width: 40px;
+  height: 28px;
+  background: #EEE;
+  border-radius: 5px;
+  
+  text-align: center;
+  line-height: 28px;
+  color: #999;
+  font-size: 14px;
+  border: 1px solid #CCC;
+}
+.home:after{ position: absolute;
+  content: " ";
+  border: transparent 13px solid;
+  border-width:  12px 8px;
+  border-right-color: #EEE;
+  top: 2px;
+  left: -15px;
+  height: 0;
+  width: 0;
+}

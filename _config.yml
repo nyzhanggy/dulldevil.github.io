@@ -1,12 +1,17 @@
 
 
-title : xPorter
+title : XPorter
 
-# Build settings
+timezone: Asia/Shanghai
+encoding: "utf-8"
 
 markdown: kramdown
 kramdown:
     input: GFM
-highlighter: rouge
 
-paginate: 2
+highlighter: rouge
+plugins:
+    - rouge
+    - jemoji
+
+paginate: 10
