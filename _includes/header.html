@@ -1,15 +1,15 @@
 
 <title>{% if page.title %} {{ page.title }} {% endif %}</title>
 
-<link rel="stylesheet" href="{{ site.url }}/assets/css/pagination.css">
-<link rel="stylesheet" href="{{ site.url }}/assets/css/common.css">
-<link rel="stylesheet" href="{{ site.url }}/assets/css/page.css">
+<link rel="stylesheet" href="{{ site.url }}{{site.baseurl}}/assets/css/pagination.css">
+<link rel="stylesheet" href="{{ site.url }}{{site.baseurl}}/assets/css/common.css">
+<link rel="stylesheet" href="{{ site.url }}{{site.baseurl}}/assets/css/page.css">
 
 <!-- css -->
 {% if page.layout == 'post' %}
-<link rel="stylesheet" href="{{ site.url }}/assets/css/markdown.css">
-<link rel="stylesheet" href="{{ site.url }}/assets/css/rouge.css">
-<link rel="stylesheet" href="{{ site.url }}/assets/css/post.css">
+<link rel="stylesheet" href="{{ site.url }}{{site.baseurl}}/assets/css/markdown.css">
+<link rel="stylesheet" href="{{ site.url }}{{site.baseurl}}/assets/css/rouge.css">
+<link rel="stylesheet" href="{{ site.url }}{{site.baseurl}}/assets/css/post.css">
 {% endif %}
 
 
@@ -17,9 +17,9 @@
 
 
 {% for css in page.css %}
-  <link rel="stylesheet" href="{{ site.url }}/assets/css/{{css}}">
+  <link rel="stylesheet" href="{{ site.url }}{{site.baseurl}}/assets/css/{{css}}">
 {% endfor %}
 
 <!-- js -->
-<script src="{{ site.url }}/assets/vendor/jquery/dist/jquery.min.js"></script>
-<script src="{{ site.url }}/assets/js/jquery-ui.js"></script>
+<script src="{{ site.url }}{{site.baseurl}}/assets/vendor/jquery/dist/jquery.min.js"></script>
+<script src="{{ site.url }}{{site.baseurl}}/assets/js/jquery-ui.js"></script>
