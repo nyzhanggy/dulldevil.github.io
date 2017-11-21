@@ -1,4 +1,55 @@
 
+
+.post {
+  padding: 20px 0;
+  background-color: #E8E8E8;
+  margin: 0;
+  min-height: 100%;
+  box-sizing: border-box;
+  
+
+}
+.post .container {
+  box-sizing: border-box;
+  padding: 30px;
+  background-color: #fff;
+  min-height: 100%;
+  box-shadow: 0 2px 6px #ccc;
+}
+.post-header{
+  border-bottom: 1px solid #eaecef;
+}
+
+.post-header {
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+}
+.post-header .title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.post-header .date {
+  text-align: center;
+  margin:  10px;
+  color: #ccc
+}
+
+.post-header a:hover {
+  text-decoration: none;
+}
+
+.triangle-facing-left {
+    display: inline-block;
+    border-left: 2px solid;
+    border-bottom: 2px solid;
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg);
+}
+
+/*目录*/
 #post-directory-module {
     z-index: 999;
 }
@@ -33,39 +84,4 @@
 .post-directory a:active,
 .post-directory a.on {
     color: #4183c4;
-}
-
-
-.post-header{
-  margin-top: 20px;
-  border-bottom: 1px solid #eaecef;
-}
-
-.post-header {
-  padding-bottom: 20px;
-  margin-bottom: 10px;
-}
-.post-header .title {
-  text-align: center;
-  font-weight: bold;
-  font-size: 40px;
-}
-
-.post-header .date {
-  text-align: center;
-  margin:  10px;
-  color: #ccc
-}
-
-.post-header a:hover {
-  text-decoration: none;
-}
-
-.triangle-facing-left {
-    display: inline-block;
-    border-left: 2px solid;
-    border-bottom: 2px solid;
-    width: 10px;
-    height: 10px;
-    transform: rotate(45deg);
 }

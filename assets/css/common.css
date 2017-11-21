@@ -6,7 +6,7 @@
 html { font-family: sans-serif; /* 1 */ -ms-text-size-adjust: 100%; /* 2 */ -webkit-text-size-adjust: 100%; /* 2 */  -webkit-font-smoothing: antialiased;}
 
 /** Remove the margin in all browsers (opinionated). */
-body { margin: 0;}
+body,html { margin: 0;}
 
 /* HTML5 display definitions ========================================================================== */
 /** Add the correct display in IE 9-. 1. Add the correct display in Edge, IE, and Firefox. 2. Add the correct display in IE. */
@@ -149,7 +149,6 @@ td, th { padding: 0; }
 
 button { cursor: pointer; }
 
-p,ol,ul {color: #666 }
 h1, h2, h3, h4, h5, h6 { margin-top: 0; margin-bottom: 0; }
 
 h1 { font-size: 32px; font-weight: 400; }
