@@ -12,4 +12,4 @@ kramdown:
 plugins:
     - jemoji
 
-paginate: 10
+paginate: 8
