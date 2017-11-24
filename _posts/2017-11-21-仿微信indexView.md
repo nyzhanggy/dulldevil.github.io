@@ -1,4 +1,4 @@
-# 仿微信 Tableview 的 sectionIndexView
+
 
 现在要实现一个跟微信的sectionIndexView 一样的索引条。本来想用系统的sectionIndexView，但是发现系统的 sectionIndexView 可定制性太差。网上搜了搜也没找到比较满意的，于是就自己写了一个。可以先看一下效果
 
