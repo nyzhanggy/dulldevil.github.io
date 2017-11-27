@@ -4,7 +4,6 @@
   margin: auto;
 }
 
-
 .site-header {
   background-color: #F8F8F8;
   border-bottom: 1px solid #eee;
@@ -21,8 +20,6 @@
 
 
 .site-header  a:hover { text-decoration: none;  }
-
-
 
 .footer {
   height: 60px;
