@@ -1,13 +1,5 @@
 baseurl: /Jekyll
 title : XPorter
-
-timezone: Asia/Shanghai
-encoding: "utf-8"
-
-markdown: kramdown
-kramdown:
-    input: GFM
-
 plugins:
     - jemoji
 
