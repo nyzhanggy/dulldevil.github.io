@@ -40,7 +40,7 @@
 .markdown-body table tr:nth-child(2n) { background-color: #f6f8fa; }
 .markdown-body table img { background-color: transparent; }
 
-.markdown-body img { max-width: 100%; box-sizing: content-box; background-color: #fff;box-shadow: 0 2px 6px #ccc;}
+.markdown-body img { max-width: 100%; box-sizing: content-box; background-color: #fff;}
 .markdown-body img[align=right] { padding-left: 20px; }
 .markdown-body img[align=left] { padding-right: 20px; }
 .markdown-body .emoji { max-width: none; vertical-align: text-top; background-color: transparent; }
