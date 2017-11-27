@@ -1,14 +1,18 @@
 {% include header.html %}
+{% include site-header.html %}
 
 <div class="post">
   <div class="container">
     <div class="post-header">
-      <a href="{{site.url}}{{site.baseurl}}/"><span class="triangle-facing-left"></span>首页</a>
-      <h1 class="title">{{ page.title }}</h1>
-      <p class="date">{{ page.date | date: "%Y/%m/%d"}}</p>
+      <h1 class="post-title">{{ page.title }}</h1>
+      <p class="post-date">{{ page.date | date: "%Y/%m/%d"}}</p>
     </div>
+
     <article class="markdown-body">
         {{ page.content }}
     </article>
   </div>
 </div>
+
+
+<!-- {% include footer.html %} -->

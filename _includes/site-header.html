@@ -1,6 +1,10 @@
 <div class="site-header">
   <div class="container">
-    <h1 class="title"><a href="{{ site.url }}{{site.baseurl}}/" title="{{ site.title }}"> {{ site.title }}</a></h1>
+    {% if page.layout == "post" %}
+    <p class="title"><a href="{{ site.url }}{{site.baseurl}}/" title="{{ site.title }}"> {{ site.title }}</a></p>
+    {% else %}
+    <p class="title"><a href="http://www.xporter.club" title="{{ site.title }}"> {{ site.title }}</a></p>
+    {% endif %}
   </div>
 
 </div>

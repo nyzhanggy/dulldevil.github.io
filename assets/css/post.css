@@ -1,43 +1,39 @@
-
-
 .post {
-  padding: 20px 0;
   background-color: #E8E8E8;
-  margin: 0;
-  min-height: 100%;
-  box-sizing: border-box;
-  
-
+  padding: 20px;
 }
 .post .container {
-  box-sizing: border-box;
-  padding: 30px;
+  box-shadow: 0 0 6px #ccc;
   background-color: #fff;
-  min-height: 100%;
-  box-shadow: 0 2px 6px #ccc;
+  min-height: 960px;
+  padding-bottom: 20px ;
 }
-.post-header{
+.post-header {
+  padding: 20px 0;
+  margin-bottom: 10px;
   border-bottom: 1px solid #eaecef;
 }
-
-.post-header {
-  padding-bottom: 20px;
-  margin-bottom: 10px;
-}
-.post-header .title {
+.post-header .post-title {
   text-align: center;
   font-weight: bold;
   font-size: 35px;
 }
 
-.post-header .date {
+.post-header .post-date {
   text-align: center;
   margin:  10px;
   color: #ccc
 }
 
+.post-header a {
+  text-decoration: none; color: #0083D1;
+  line-height: 30px;
+  vertical-align: middle;
+  font-size: 18px;
+}
+
 .post-header a:hover {
-  text-decoration: none;
+  text-decoration: none; color: #0083D1
 }
 
 .triangle-facing-left {
@@ -47,41 +43,4 @@
     width: 10px;
     height: 10px;
     transform: rotate(45deg);
-}
-
-/*目录*/
-#post-directory-module {
-    z-index: 999;
-}
-
-.post-directory {
-    font-size: 14px;
-    background: #fff;
-    overflow: hidden;
-    width: 300px;
-    padding-bottom: 1em;
-    border: 1px solid #efefef;
-    color: #999;
-}
-
-.post-directory ul,
-.post-directory ol {
-    padding-left: 1.5em;
-    list-style: none;
-}
-
-.post-directory strong {
-    border-left: 5px solid #999;
-    padding: 2px 5px 2px 15px;
-}
-
-.post-directory a {
-    text-decoration: none;
-    color: #bababa;
-}
-
-.post-directory a:hover,
-.post-directory a:active,
-.post-directory a.on {
-    color: #4183c4;
 }

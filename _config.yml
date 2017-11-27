@@ -3,4 +3,8 @@ title : XPorter
 plugins:
     - jemoji
 
-paginate: 8
+
+defaults:
+  -
+    values:
+      layout: "post"

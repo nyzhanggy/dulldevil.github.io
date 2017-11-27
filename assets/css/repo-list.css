@@ -1,8 +1,11 @@
-
-
 .repo-list {
     position: relative;
     padding-left: 0
+}
+
+.repo-list a {
+  color: #0366d6;
+  text-decoration: none;
 }
 
 .repo-list .participation-graph {

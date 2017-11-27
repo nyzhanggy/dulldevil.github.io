@@ -1,27 +1,6 @@
 
 .container {
-  max-width: 860px;
-  margin: auto;
-}
-
-.site-header {
-  background-color: #F8F8F8;
-  border-bottom: 1px solid #eee;
-  height: 80px;
-}
-.site-header .title {
-  float: left;
-}
-
-.site-header a {
-  line-height: 80px;
-  color: black;
-}
-
-
-.site-header  a:hover { text-decoration: none;  }
-
-.footer {
-  height: 60px;
-
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
