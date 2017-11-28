@@ -1,13 +1,4 @@
-.post {
-  background-color: #E8E8E8;
-  padding: 20px;
-}
-.post .container {
-  box-shadow: 0 0 6px #ccc;
-  background-color: #fff;
-  min-height: 960px;
-  padding-bottom: 20px ;
-}
+
 .post-header {
   padding: 20px 0;
   margin-bottom: 10px;

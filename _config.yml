@@ -3,6 +3,7 @@ title : XPorter
 plugins:
     - jemoji
 
+markdown: kramdown
 
 defaults:
   -
