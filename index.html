@@ -12,6 +12,9 @@ css: ["repo-list.css"]
       </h3>
       <p class="repo-list-meta">
           <span class="meta-info"> {{ post.date | date: "%Y/%m/%d" }} </span>
+          {% for cat in post.categories %}
+            <span class="meta-info"><a href="{{site.url}}{{site.baseurl}}/categories">{{ cat }} </a></span>
+          {% endfor %}
       </p>
   </li>
   {% endfor %}

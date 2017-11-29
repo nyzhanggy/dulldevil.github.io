@@ -12,7 +12,10 @@
 <link rel="stylesheet" href="{{ site.url }}{{site.baseurl}}/assets/css/markdown.css">
 <link rel="stylesheet" href="{{ site.url }}{{site.baseurl}}/assets/css/highlight.css">
 <link rel="stylesheet" href="{{ site.url }}{{site.baseurl}}/assets/css/post.css">
+{% endif %}
 
+
+{% if page.MathJax %}
 <!-- 数学公式 -->
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({
@@ -28,10 +31,7 @@
 </script>
 
 <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
-
 {% endif %}
-
-
 {% for css in page.css %}
   <link rel="stylesheet" href="{{ site.url }}{{site.baseurl}}/assets/css/{{css}}">
 {% endfor %}
