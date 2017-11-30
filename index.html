@@ -7,9 +7,9 @@ css: ["repo-list.css"]
 <ol class="repo-list">
   {% for post in site.posts %}
   <li class="repo-list-item">
-      <h3 class="repo-list-name">
+      <p class="repo-list-name">
         <a href="{{site.url}}{{site.baseurl}}/{{ post.url }}">{{ post.title }}</a>
-      </h3>
+      </p>
       <p class="repo-list-meta">
           <span class="meta-info"> {{ post.date | date: "%Y/%m/%d" }} </span>
           {% for cat in post.categories %}

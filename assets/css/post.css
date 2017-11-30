@@ -2,36 +2,28 @@
 .post-header {
   padding: 20px 0;
   margin-bottom: 10px;
-  border-bottom: 1px solid #eaecef;
+  text-align: center;
 }
 .post-header .post-title {
-  text-align: center;
+
   font-weight: bold;
   font-size: 35px;
 }
 
-.post-header .post-date {
-  text-align: center;
-  margin:  10px;
+.post-header .post-meta-info  {
+  margin:  15px;
   color: #ccc
 }
 
-.post-header a {
-  text-decoration: none; color: #0083D1;
-  line-height: 30px;
-  vertical-align: middle;
-  font-size: 18px;
+.post-header .post-meta-info span {
+  margin-right: 10px;
 }
 
-.post-header a:hover {
-  text-decoration: none; color: #0083D1
+.post-header .post-meta-info  a {
+    color: #ccc;
+    text-decoration: underline;
 }
 
-.triangle-facing-left {
-    display: inline-block;
-    border-left: 2px solid;
-    border-bottom: 2px solid;
-    width: 10px;
-    height: 10px;
-    transform: rotate(45deg);
+.post-header .post-meta-info a:hover,.post-header .post-meta-info a:hover {
+    text-decoration: underline
 }
