@@ -21,7 +21,7 @@
 
 .post-header .post-meta-info  a {
     color: #ccc;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .post-header .post-meta-info a:hover,.post-header .post-meta-info a:hover {
