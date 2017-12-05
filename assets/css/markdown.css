@@ -13,7 +13,7 @@
 .markdown-body h6 { font-size: 108.5%; font-weight: 600; }
 
 /*表格*/
-.markdown-body table { display: block; overflow: auto; border-spacing: 0; border-collapse: collapse; }
+.markdown-body table { display: block; overflow: auto; border-spacing: 0; border-collapse: collapse; margin: 10px 0;}
 .markdown-body table th { font-weight: 600; }
 .markdown-body table th, .markdown-body table td { padding: 6px 13px; border: 1px solid #dfe2e5; }
 .markdown-body table tr { background-color: #fff; border-top: 1px solid #c6cbd1; }
@@ -25,10 +25,10 @@
 .markdown-body code::before, .markdown-body code::after, .markdown-body tt::before, .markdown-body tt::after { letter-spacing: -0.2em; content: "\00a0"; }
 .markdown-body pre code::before, .markdown-body pre code::after, .markdown-body pre tt::before, .markdown-body pre tt::after { content: normal; }
 .markdown-body pre code { font-size: 90%;display: inline; max-width: auto; padding: 0; margin: 0; overflow: visible; line-height: inherit; word-wrap: break-word; background-color: transparent; border: 0; }
-.markdown-body pre { word-wrap:break-word; }
+.markdown-body pre { word-wrap:break-word; border-radius: 3px;border: 1px solid #e0e0e0;}
 .markdown-body .highlight { margin-bottom: 16px; }
-.markdown-body .highlight pre { margin-bottom: 0; word-break: break-word; border: 1px solid #e0e0e0;}
-.markdown-body .highlight pre, .markdown-body pre { padding: 16px; overflow: auto; line-height: 1.45; background-color: #f6f8fa; border-radius: 3px; }
+.markdown-body .highlight pre { margin-bottom: 0; word-break: break-word; }
+.markdown-body .highlight pre, .markdown-body pre { padding: 16px; overflow: auto; line-height: 1.45; background-color: #f6f8fa;  }
 
 /*列表*/
 .markdown-body ul.no-list, .markdown-body ol.no-list { padding: 0; list-style-type: none; }
