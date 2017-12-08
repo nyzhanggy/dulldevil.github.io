@@ -4,18 +4,46 @@ title: "XPorter"
 css: ["repo-list.css"]
 ---
 
-<ol class="repo-list">
-  {% for post in site.posts %}
-  <li class="repo-list-item">
-      <p class="repo-list-name">
-        <a href="{{site.url}}{{site.baseurl}}/{{ post.url }}">{{ post.title }}</a>
-      </p>
-      <p class="repo-list-meta">
-          <span class="meta-info"> {{ post.date | date: "%Y/%m/%d" }} </span>
-          {% for cat in post.categories %}
-            <span class="meta-info"><a href="{{site.url}}{{site.baseurl}}/categories">{{ cat }} </a></span>
-          {% endfor %}
-      </p>
-  </li>
-  {% endfor %}
-</ol>
+<div class="left">
+  <ol class="repo-list">
+    {% for post in paginator.posts %}
+    <li class="repo-list-item">
+        <p class="repo-list-name">
+          <a href="{{site.url}}{{site.baseurl}}/{{ post.url }}">{{ post.title }}</a>
+        </p>
+        <p class="repo-list-meta">
+            <span class="meta-info"> {{ post.date | date: "%Y/%m/%d" }} </span>
+            {% for cat in post.categories %}
+              <span class="meta-info"><a href="{{site.url}}{{site.baseurl}}/categories#{{ cat }} ">{{ cat }} </a></span>
+            {% endfor %}
+        </p>
+    </li>
+    {% endfor %}
+  </ol>
+  <div class="pagination">
+    {% if paginator.page == 1 %}
+        <a href="javascript:;" class="active btn ">1</a>
+    {% else %}
+        <a href="{{site.baseurl}}/"  class="btn ">1</a>
+    {% endif %}
+    {% for count in (2..paginator.total_pages) %}
+      {% if count == paginator.page %}
+          <a href="javascript:;"  class="active btn ">{{count}}</a>
+      {% else %}
+          <a href="{{site.baseurl}}/page{{count}}"  class="btn ">{{count}}</a>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+
+<div class="right">
+  <div class="item categories">
+    <h2>分类</h2>
+    {% assign sorted_categories = site.categories | sort %}
+    <ul>
+      {% for category in sorted_categories %}
+      <li><a href="{{site.url}}{{site.baseurl}}/categories#{{ category | first }}">{{ category | first }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>

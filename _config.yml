@@ -2,8 +2,11 @@ baseurl: /Jekyll
 title : XPorter
 plugins:
     - jemoji
+    - jekyll-paginate
 
 markdown: kramdown
+
+paginate: 8
 
 defaults:
   -

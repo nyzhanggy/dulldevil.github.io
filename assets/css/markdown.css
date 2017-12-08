@@ -21,8 +21,8 @@
 .markdown-body table img { background-color: transparent; }
 
 /*code*/
-.markdown-body code {background-color: #f6f8fa;}
-.markdown-body code::before, .markdown-body code::after, .markdown-body tt::before, .markdown-body tt::after { letter-spacing: -0.2em; content: "\00a0"; }
+.markdown-body code {background-color: #f6f8fa;word-wrap: break-word; padding: 0 1px}
+.markdown-body tt::before, .markdown-body tt::after { letter-spacing: -0.2em; content: "\00a0"; }
 .markdown-body pre code::before, .markdown-body pre code::after, .markdown-body pre tt::before, .markdown-body pre tt::after { content: normal; }
 .markdown-body pre code { font-size: 90%;display: inline; max-width: auto; padding: 0; margin: 0; overflow: visible; line-height: inherit; word-wrap: break-word; background-color: transparent; border: 0; }
 .markdown-body pre { word-wrap:break-word; border-radius: 3px;border: 1px solid #e0e0e0;}

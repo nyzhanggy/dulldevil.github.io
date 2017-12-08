@@ -27,9 +27,8 @@
 
 .repo-list-item {
     position: relative;
-    padding: 20px 0;
+    padding-bottom: 20px;
     list-style: none;
-    border-bottom: 1px solid #eee
 }
 
 .repo-list-name {
