@@ -21,18 +21,32 @@ css: ["repo-list.css"]
     {% endfor %}
   </ol>
   <div class="pagination">
-    {% if paginator.page == 1 %}
-        <a href="javascript:;" class="active btn ">1</a>
-    {% else %}
-        <a href="{{site.baseurl}}/"  class="btn ">1</a>
-    {% endif %}
-    {% for count in (2..paginator.total_pages) %}
-      {% if count == paginator.page %}
-          <a href="javascript:;"  class="active btn ">{{count}}</a>
+      {% if paginator.previous_page %}
+        {% if paginator.previous_page == 1 %}
+            <a href="/" class="btn">&laquo;</a>
+        {% else %}
+            <a href="/page{{paginator.previous_page}}"  class="btn">&laquo;</a>
+        {% endif %}
       {% else %}
-          <a href="{{site.baseurl}}/page{{count}}"  class="btn ">{{count}}</a>
+          <a disabled="disabled" href="javascript:;" class="btn">&laquo;</a>
       {% endif %}
-    {% endfor %}
+      {% if paginator.page == 1 %}
+          <a href="javascript:;" class="active btn">1</a>
+      {% else %}
+          <a href="/"  class="btn">1</a>
+      {% endif %}
+      {% for count in (2..paginator.total_pages) %}
+        {% if count == paginator.page %}
+            <a href="javascript:;"  class="active btn">{{count}}</a>
+        {% else %}
+            <a href="/page{{count}}"  class="btn">{{count}}</a>
+        {% endif %}
+      {% endfor %}
+      {% if paginator.next_page %}
+          <a href="/page{{paginator.next_page}}"  class="btn">&raquo;</a>
+      {% else %}
+          <a disabled="disabled" href="javascript:;" class="btn">&raquo;</a>
+      {% endif %}
   </div>
 </div>
 
