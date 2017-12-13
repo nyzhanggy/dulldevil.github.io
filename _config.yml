@@ -6,7 +6,7 @@ plugins:
 
 markdown: kramdown
 
-paginate: 8
+paginate: 10
 
 defaults:
   -
