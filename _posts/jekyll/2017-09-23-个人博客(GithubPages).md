@@ -1,11 +1,20 @@
 ---
-title: 个人博客(二)：GitHub Pages 配置
+title: 个人博客：GitHub Pages 
 categories: [搭建个人博客]
 ---
 
 ### 开启GitHub Pages
-上一篇说到，创建一个名为`<username>.github.io`的仓库之后，就能通过`<username>.github.io`访问到我们的博客，这是因为在仓库的`GitHub Pages`配置。
 
+1. 新建一个repository ，名字格式很重要，要像这样`<username>.github.io`；
+2. 新建一个`index.html`文件，内容如下
+    ```html
+    Hello World
+    ```
+3. 保存提交
+
+打开浏览器访问`<username>.github.io`，不出意外的话就能看到一句熟悉的问候。
+
+### 配置 GitHub Pages
 每一个仓库都会有`GitHub Pages`的配置信息，只不过当仓库名字为`<username>.github.io`，Github会自动设置`GitHub Pages`的信息。
 
 接下来我们试着自己手动设置这些信息，新建一个名为`pageBlog`的仓库，它的`GitHub Pages`的配置信息信息是这样的
@@ -41,3 +50,28 @@ Your site is ready to be published at https://<username>.github.io/pageBlog/.
 |TTL|      10分钟|
 
 设置完成之后就可以通过你的域名访问你的博客了。如果还想更加深入的了解`Github Pages`，可以看[官方的介绍](https://pages.github.com/)。
+
+
+### 设置风格
+
+GitHub Pages 本身是有一些简单的[Jekyll Theme ](https://help.github.com/articles/creating-a-github-pages-site-with-the-jekyll-theme-chooser/)。在`Settings ->GitHub Pages`下点击`Choose a theme`，选择一个你喜欢的样式`Select Theme`，这里演示的就先选择`cayman`这个主题。
+
+选完主题之后，回到你的仓库看一下，会发现多了一个`_config.yml`的文件，这个文件是一个Jekyll的配置文件，打开看一下里面只有一行代码，指定了一个`theme`。
+
+```yml
+theme: jekyll-theme-cayman
+```
+
+Jekyll 是一个转化工具，其实就是将markdown格式通过指定的模版转换成html页面，所以刚才创建的 index 和 wiki 页面的的格式需要修改。第一步要把后缀改为`.md`,然后把内容改为`markdown`语法。
+
+修改完之后
+index 页面
+![index](https://raw.githubusercontent.com/DullDevil/pics/master/person-blog/list-index.png)
+
+
+
+```yml
+theme: jekyll-theme-cayman
+title: MyBlog
+description: This is My Blog
+```
