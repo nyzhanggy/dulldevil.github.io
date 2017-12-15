@@ -5,12 +5,12 @@
 .markdown-body h1:hover .anchor .octicon-link, .markdown-body h2:hover .anchor .octicon-link, .markdown-body h3:hover .anchor .octicon-link, .markdown-body h4:hover .anchor .octicon-link, .markdown-body h5:hover .anchor .octicon-link, .markdown-body h6:hover .anchor .octicon-link { visibility: visible; }
 .markdown-body h1 tt, .markdown-body h1 code, .markdown-body h2 tt, .markdown-body h2 code, .markdown-body h3 tt, .markdown-body h3 code, .markdown-body h4 tt, .markdown-body h4 code, .markdown-body h5 tt, .markdown-body h5 code, .markdown-body h6 tt, .markdown-body h6 code { font-size: inherit; }
 
-.markdown-body h1 { padding-bottom: 0.3em; font-size: 200%; border-bottom: 1px solid #eaecef;font-weight: 600; }
-.markdown-body h2 { padding-bottom: 0.3em; font-size: 150%; border-bottom: 1px solid #eaecef;font-weight: 600; }
-.markdown-body h3 { font-size: 120%; font-weight: 600;}
-.markdown-body h4 { font-size: 110%; font-weight: 600; }
-.markdown-body h5 { font-size: 108.75%;; font-weight: 600; }
-.markdown-body h6 { font-size: 108.5%; font-weight: 600; }
+.markdown-body h1 { padding-bottom: 0.3em; font-size: 210%; border-bottom: 1px solid #eaecef;font-weight: 600; }
+.markdown-body h2 { padding-bottom: 0.3em; font-size: 190%; border-bottom: 1px solid #eaecef;font-weight: 600; }
+.markdown-body h3 { font-size: 170%; font-weight: 600;}
+.markdown-body h4 { font-size: 150%; font-weight: 600; }
+.markdown-body h5 { font-size: 130%;; font-weight: 600; }
+.markdown-body h6 { font-size: 110%; font-weight: 600; }
 
 /*表格*/
 .markdown-body table { display: block; overflow: auto; border-spacing: 0; border-collapse: collapse; margin: 10px 0;}
@@ -40,7 +40,6 @@
 .markdown-body dl dd { padding: 0 16px; margin-bottom: 16px; }
 
 /*链接*/
-
 .markdown-body a { text-decoration: none; color: #0083D1}
 
 
@@ -52,22 +51,16 @@
 .markdown-body .footnotes {font-size: 80%;}
 
 /*引用*/
-.markdown-body blockquote { margin-top: 0; margin-bottom: 16px; padding: 0 1em; color: #6a737d; border-left: 0.25em solid #dfe2e5; }
-.markdown-body blockquote > :first-child { margin-top: 0; }
-.markdown-body blockquote > :last-child { margin-bottom: 0; }
+.markdown-body blockquote { margin-top: 0; margin-bottom: 16px; padding: 0 1em; color: #6a737d; border-left: 0.25em solid #dfe2e5;-webkit-margin-before: 0;-webkit-margin-after: 0;-webkit-margin-start: 0;-webkit-margin-end: 0; }
+
 
 /*分割线*/
 .markdown-body hr { height: 1px; padding: 0; margin: 24px 0; background-color: #eaecef; border: 0; }
-
 .markdown-body strong {font-weight: bold;}
 
-
+/*目录*/
 .markdown-body #markdown-toc { font-size: 14px; background: #fff; overflow: hidden; padding-bottom: 1em; padding-top: 1em;border: 1px solid #efefef; color: #999; }
-
 .markdown-body #markdown-toc ul, .markdown-body #markdown-toc ol { padding-left: 1.5em; list-style: none; }
-
 .markdown-body #markdown-toc strong { border-left: 5px solid #999; padding: 2px 5px 2px 15px; }
-
 .markdown-body #markdown-toc a { text-decoration: none; color: #bababa; }
-
 .markdown-body #markdown-toc a:hover, .markdown-body #markdown-toc a:active, .markdown-body #markdown-toc a.on { color: #4183c4; }
