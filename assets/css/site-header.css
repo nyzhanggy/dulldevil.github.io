@@ -5,9 +5,9 @@
   font-size: 30px;
 }
 
-.site-title .title {
+.site-header .title {
   max-width: 960px;
-  margin: 0 auto;
+  margin-left: 20px;
 
 }
 .site-header a {

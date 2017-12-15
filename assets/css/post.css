@@ -1,4 +1,18 @@
+.post-content {
+  display: flex;
+  flex-direction: row;
+}
 
+.left {
+  float: left;
+  width: 120px;
+  height: 100px;
+  background: red;
+}
+.right {
+  float: left;
+  flex: auto;
+}
 .post-header {
   padding: 20px 0;
   margin-bottom: 10px;
@@ -26,4 +40,13 @@
 
 .post-header .post-meta-info a:hover,.post-header .post-meta-info a:hover {
     text-decoration: underline
+}
+
+
+@media screen and (max-width: 960px) {
+
+  .left{
+    display:none;
+  }
+
 }
