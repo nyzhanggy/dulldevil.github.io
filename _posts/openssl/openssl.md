@@ -61,8 +61,10 @@ Unable to load config info from /user/local/ssl/openssl.cnf
 
 
 
- 转换DER证书为PEM格式,抓HTTPS时会用到
+转换DER证书为PEM格式,抓HTTPS时会用到
 openssl x509 -in cert.cer -inform DER -outform PEM -out cert.pem
+
+
 PKCS 全称是 Public-Key Cryptography Standards ，是由 RSA 实验室与其它安全系统开发商为促进公钥密码的发展而制订的一系列标准，PKCS 目前共发布过 15 个标准。 常用的有：
 PKCS#7 Cryptographic Message Syntax Standard
 PKCS#10 Certification Request Standard
@@ -103,3 +105,10 @@ openssl pkcs12 -export -in Cert.pem -out Cert.p12 -inkey key.pem
 九 从 CRT format 到 PEM
 openssl x509 -in input.crt -out input.der -outform DER
 openssl x509 -in input.der -inform DER -out output.pem -outform PEM
+
+
+
+
+openssl x509 -in ca-cert.pem -inform PEM -out cert.der -outform DER
+
+ openssl pkcs12 -export -in server-cert.pem -out Cert.p12 -inkey server-key.pem
