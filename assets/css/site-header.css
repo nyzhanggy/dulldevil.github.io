@@ -1,18 +1,17 @@
 .site-header {
-  background-color: #F8F8F8;
   border-bottom: 1px solid #eee;
-  height: 60px;
   font-size: 30px;
+  background-color: #f8f8f8;
+  color: #333;
+  padding: 0 20px;
+
 }
 
 .site-title .title {
-  max-width: 960px;
-  margin: 0 auto;
-
+  line-height: 60px;
 }
 .site-header a {
-  line-height: 60px;
-  color: black;
+  color: #333;
   text-decoration: none;
 }
 

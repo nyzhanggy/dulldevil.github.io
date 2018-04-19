@@ -3,61 +3,63 @@ layout: page
 title: "XPorter"
 css: ["repo-list.css","index.css"]
 ---
-
-<div class="left">
-  <ol class="repo-list">
-    {% for post in paginator.posts %}
-    <li class="repo-list-item">
-        <p class="repo-list-name">
-          <a href="{{site.url}}{{site.baseurl}}/{{ post.url }}">{{ post.title }}</a>
-        </p>
-        <p class="repo-list-meta">
-            <span class="meta-info"> {{ post.date | date: "%Y/%m/%d" }} </span>
-            {% for cat in post.categories %}
-              <span class="meta-info"><a href="{{site.url}}{{site.baseurl}}/categories#{{ cat }} ">{{ cat }} </a></span>
-            {% endfor %}
-        </p>
-    </li>
-    {% endfor %}
-  </ol>
-  <div class="pagination">
-      {% if paginator.previous_page %}
-        {% if paginator.previous_page == 1 %}
-            <a href="/" class="btn">&laquo;</a>
-        {% else %}
-            <a href="/page{{paginator.previous_page}}"  class="btn">&laquo;</a>
-        {% endif %}
-      {% else %}
-          <a disabled="disabled" href="javascript:;" class="btn">&laquo;</a>
-      {% endif %}
-      {% if paginator.page == 1 %}
-          <a href="javascript:;" class="active btn">1</a>
-      {% else %}
-          <a href="/"  class="btn">1</a>
-      {% endif %}
-      {% for count in (2..paginator.total_pages) %}
-        {% if count == paginator.page %}
-            <a href="javascript:;"  class="active btn">{{count}}</a>
-        {% else %}
-            <a href="/page{{count}}"  class="btn">{{count}}</a>
-        {% endif %}
+<div class="index-content">
+  <div class="left">
+    <ol class="repo-list">
+      {% for post in paginator.posts %}
+      <li class="repo-list-item">
+          <p class="repo-list-name">
+            <a href="{{site.url}}{{site.baseurl}}/{{ post.url }}">{{ post.title }}</a>
+          </p>
+          <p class="repo-list-meta">
+              <span class="meta-info"> {{ post.date | date: "%Y/%m/%d" }} </span>
+              {% for cat in post.categories %}
+                <span class="meta-info"><a href="{{site.url}}{{site.baseurl}}/categories#{{ cat }} ">{{ cat }} </a></span>
+              {% endfor %}
+          </p>
+      </li>
       {% endfor %}
-      {% if paginator.next_page %}
-          <a href="/page{{paginator.next_page}}"  class="btn">&raquo;</a>
-      {% else %}
-          <a disabled="disabled" href="javascript:;" class="btn">&raquo;</a>
-      {% endif %}
+    </ol>
+    <div class="pagination">
+        {% if paginator.previous_page %}
+          {% if paginator.previous_page == 1 %}
+              <a href="/" class="btn">&laquo;</a>
+          {% else %}
+              <a href="/page{{paginator.previous_page}}"  class="btn">&laquo;</a>
+          {% endif %}
+        {% else %}
+            <a disabled="disabled" href="javascript:;" class="btn">&laquo;</a>
+        {% endif %}
+        {% if paginator.page == 1 %}
+            <a href="javascript:;" class="active btn">1</a>
+        {% else %}
+            <a href="/"  class="btn">1</a>
+        {% endif %}
+        {% for count in (2..paginator.total_pages) %}
+          {% if count == paginator.page %}
+              <a href="javascript:;"  class="active btn">{{count}}</a>
+          {% else %}
+              <a href="/page{{count}}"  class="btn">{{count}}</a>
+          {% endif %}
+        {% endfor %}
+        {% if paginator.next_page %}
+            <a href="/page{{paginator.next_page}}"  class="btn">&raquo;</a>
+        {% else %}
+            <a disabled="disabled" href="javascript:;" class="btn">&raquo;</a>
+        {% endif %}
+    </div>
   </div>
-</div>
 
-<div class="right">
-  <div class="item categories">
-    <h2>分类</h2>
-    {% assign sorted_categories = site.categories | sort %}
-    <ul>
-      {% for category in sorted_categories %}
-      <li><a href="{{site.url}}{{site.baseurl}}/categories#{{ category | first }}">{{ category | first }}</a></li>
-      {% endfor %}
-    </ul>
+  <div class="right">
+    <div class="item categories">
+      <h2>分类</h2>
+      {% assign sorted_categories = site.categories | sort %}
+      <ul>
+        {% for category in sorted_categories %}
+        <li><a href="{{site.url}}{{site.baseurl}}/categories#{{ category | first }}">{{ category | first }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
   </div>
+
 </div>

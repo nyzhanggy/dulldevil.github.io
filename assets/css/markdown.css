@@ -59,8 +59,15 @@
 .markdown-body strong {font-weight: bold;}
 
 /*目录*/
-.markdown-body #markdown-toc { font-size: 14px; background: #fff; overflow: hidden; padding-bottom: 1em; padding-top: 1em;border: 1px solid #efefef; color: #999; }
+.markdown-body #markdown-toc {width: 160px;right: 10px;position: fixed; font-size: 12px; background: #fff; overflow: hidden; padding-bottom: 1em; padding-top: 1em;border: 1px solid #efefef; color: #999; }
 .markdown-body #markdown-toc ul, .markdown-body #markdown-toc ol { padding-left: 1.5em; list-style: none; }
 .markdown-body #markdown-toc strong { border-left: 5px solid #999; padding: 2px 5px 2px 15px; }
 .markdown-body #markdown-toc a { text-decoration: none; color: #bababa; }
 .markdown-body #markdown-toc a:hover, .markdown-body #markdown-toc a:active, .markdown-body #markdown-toc a.on { color: #4183c4; }
+
+@media screen and (max-width: 1080px) {
+
+  #markdown-toc{
+    display:none;
+  }
+}

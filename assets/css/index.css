@@ -1,12 +1,12 @@
-.left {
-  float: left;
-  width: 65%;
-  padding: 20px 0;
+.container .index-content {
+  display: flex;
+  flex-direction: row;
+  padding: 0 40px;
 }
-.right {
-  float: right;
-  width: 35%;
-  padding: 20px 0;
+
+
+.left {
+  flex: auto;
 }
 
 .right ul {
@@ -27,6 +27,9 @@
   text-decoration: none;
 }
 
+.pagination {
+  margin-bottom: 20px;
+}
 
 .pagination a.active {
   background: #337ab7;
