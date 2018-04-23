@@ -4,15 +4,14 @@
   background-color: #f8f8f8;
   color: #333;
   padding: 0 20px;
-
+  height: 80px;
 }
 
-.site-title .title {
-  line-height: 60px;
-}
+
 .site-header a {
   color: #333;
   text-decoration: none;
+  line-height: 80px;
 }
 
 .site-header  a:hover { text-decoration: none;  }
