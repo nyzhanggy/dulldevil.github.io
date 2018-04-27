@@ -31,7 +31,6 @@ NSOperation 之间可以添加相互依赖，但是一定要注意不要A依赖B
 
 ```
 [operationB addDependency:operationA];
-
 ```
 
 ### 2、NSOperationQueue
