@@ -1,6 +1,6 @@
 ---
 title: iOS 基础：NSOperation
-categories: [iOS 基础]
+categories: [根深柢固]
 ---
 
 - TOC

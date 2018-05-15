@@ -8,7 +8,8 @@ title: 分类
 {% for category in sorted_categories %}
 <h2 id="{{ category | first }}">{{ category | first }}</h2>
 <ul >
-{% for post in category.last %}
+{% assign sorted_posts = category.last | sort: 'title','last' %}
+{% for post in sorted_posts %}
 <li >
 <a href="{{ site.url }}{{ site.baseurl }}/{{ post.url }}">{{ post.title }}</a>
 </li>

@@ -1,6 +1,6 @@
 ---
 title: 仿微信 indexView
-categories: [自定义组件]
+categories: [举一反三]
 ---
 
 - TOC
