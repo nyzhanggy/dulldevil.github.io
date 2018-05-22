@@ -22,3 +22,12 @@ alwaysBounceHorizontal = YES; // 垂直
 }];
 
 ```
+## 停止到指定位置
+
+```
+- (void)scrollViewWillEndDragging:(UIScrollView *)scrollView withVelocity:(CGPoint)velocity targetContentOffset:(inout CGPoint *)targetContentOffset {
+    float targetOffset = targetContentOffset->y < 20 ? 0 : 40;
+    targetContentOffset->y = targetOffset;
+}
+
+```
