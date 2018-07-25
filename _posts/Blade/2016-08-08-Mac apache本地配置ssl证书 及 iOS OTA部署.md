@@ -1,6 +1,6 @@
 ---
 title: Mac apache本地配置ssl证书 及 iOS OTA部署
-categories: [先利其器]
+categories: [神兵利器]
 ---
 
 如果要实现iOS的 OAT分发，现在必须通过https才能实现，于是自己闲来无事自己研究了一下。

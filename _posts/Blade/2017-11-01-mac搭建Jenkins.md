@@ -1,6 +1,6 @@
 ---
 title: 搭建Jenkins
-categories: [先利其器]
+categories: [神兵利器]
 ---
 
 ## 安装

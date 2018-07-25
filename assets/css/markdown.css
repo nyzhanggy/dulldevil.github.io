@@ -58,12 +58,18 @@
 .markdown-body hr { height: 1px; padding: 0; margin: 24px 0; background-color: #eaecef; border: 0; }
 .markdown-body strong {font-weight: bold;}
 
+/*代办列表*/
+.markdown-body .task-list  li {list-style: none;}
+
 /*目录*/
-.markdown-body #markdown-toc {width: 160px;right: 10px;position: fixed; font-size: 12px; background: #fff; overflow: hidden; padding-bottom: 1em; padding-top: 1em;border: 1px solid #efefef; color: #999; }
+.markdown-body #markdown-toc {width: 160px;right: 10px;top: 100px; position: fixed; font-size: 12px; background: #fff; overflow: hidden; padding-bottom: 1em; padding-top: 1em;border: 1px solid #efefef; color: #999; }
 .markdown-body #markdown-toc ul, .markdown-body #markdown-toc ol { padding-left: 1.5em; list-style: none; }
 .markdown-body #markdown-toc strong { border-left: 5px solid #999; padding: 2px 5px 2px 15px; }
 .markdown-body #markdown-toc a { text-decoration: none; color: #bababa; }
 .markdown-body #markdown-toc a:hover, .markdown-body #markdown-toc a:active, .markdown-body #markdown-toc a.on { color: #4183c4; }
+
+
+
 
 @media screen and (max-width: 1080px) {
 
