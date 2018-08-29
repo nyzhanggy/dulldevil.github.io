@@ -1,8 +1,8 @@
 body,html { margin: 0; width:100vw;overflow-x:hidden;}
 
-html { font-family:'PingFang SC', 'Helvetica Neue', Helvetica, Arial, Verdana, 'Hiragino Sans GB', 'Noto Sans CJK SC', 'Source Han Sans CN', STHeiti, 'Microsoft YaHei', 'WenQuanYi Micro Hei', SimSun, sans-serif; font-weight: 400;}
+html { font-family: Arial, "Hiragino Sans GB", 冬青黑, "Microsoft YaHei", 微软雅黑, SimSun, 宋体, Helvetica, Tahoma, "Arial sans-serif"; font-weight: 400;}
 
-body { font-size: 16px; line-height: 1.6; letter-spacing: 0.5;color: #333; background-color: #fff; -webkit-font-smoothing:antialiased}
+body { font-size: 16px; line-height: 1.4;color: #333; background-color: #fff; -webkit-font-smoothing: antialiased;}
 
 
 h1, h2, h3, h4, h5, h6 { margin-top: 0; margin-bottom: 0; }
