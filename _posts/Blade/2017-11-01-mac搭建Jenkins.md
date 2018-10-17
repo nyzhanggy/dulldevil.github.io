@@ -47,6 +47,13 @@ http://localhost:8080/restart  //重启
 
 http://localhost:8080/reload  //重新加载
 ```
+
+## 插件
+
+### webhook 插件
+[Generic Webhook Trigger Plugin](https://wiki.jenkins.io/display/JENKINS/Generic+Webhook+Trigger+Plugin)
+
 ## 遇到的问题
+
 ### 1.可选插件为空
 插件管理的高级选项下 将升级站点的URL 换成 http://updates.jenkins.io/update-center.json
