@@ -1,5 +1,5 @@
 ---
-title: ReactNative学习（一）：RCT_REMAP_METHOD
+title: ReactNative导出原生方法
 categories: [略知一二]
 ---
 
