@@ -85,7 +85,8 @@ SSLCertificateKeyFile "/private/etc/apache2/ssl/server.key"</pre>
 
 
 **ServerName 服务地址 **
-**DocumentRoot一般apache的文件都在/Library/WebServer/Documents/**
+**DocumentRoot一般apache的文件都在/Library/WebServer/Documents/ 同时要保证与80端口的设置一致，不然会出现403异常**
+
 ```
 
 
