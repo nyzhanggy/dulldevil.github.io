@@ -167,3 +167,72 @@ index.html的内容，两个连接，一个下载安装包，一个现在ssl的�
 最大的坑就是在生成证书请求文件时，没注意到 Common Name 的设置，以至于后面点击下载的时候一直提示连接失败，找了好久才找到这个问题。
 
 ---
+
+
+## Apache + php 生成目录信息
+
+配置目录文件
+
+```
+<IfModule dir_module>
+    DirectoryIndex ls_json.php index.php index.html 
+</IfModule>
+```
+
+打开php配置
+```
+LoadModule php7_module libexec/apache2/libphp7.so
+```
+
+
+创建ls_json.php文件
+
+```php
+<?php 
+$path = dirname(__FILE__);
+$arr = array();
+$results= scandir($path,1);
+$output = []; 
+foreach ($results as $result) {
+    if ($result === '.' or $result === '..') continue;
+    if (is_dir($path . '/' . $result)) {
+        //code to use if directory
+        array_push($output,$result);
+    }
+}
+header("Content-type: application/json"); 
+echo json_encode($output); 
+
+?> 
+```
+
+指向最新版本
+
+```php
+<?php
+// grab the files 
+
+$path = dirname(__FILE__);
+$arr = array();
+$results= scandir($path,1);
+$output = []; 
+foreach ($results as $result) {
+    if ($result === '.' or $result === '..') continue;
+    if (is_dir($path . '/' . $result)) {
+        //code to use if directory
+        array_push($output,$result);
+    }
+}
+$url="itms-services://?action=download-manifest&url=https://dev.xporter.club/iOS/".max($output)."/install.plist";
+?>
+
+<html>   
+<head>   
+<meta http-equiv="refresh" content="1;url=<?php echo $url; ?>">   
+</head>   
+<body> 
+
+</body>
+</html>
+
+```
