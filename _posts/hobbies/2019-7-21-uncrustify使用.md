@@ -1,5 +1,6 @@
 ---
 title: OC 代码格式化
+categories: [略知一二]
 ---
 
 
