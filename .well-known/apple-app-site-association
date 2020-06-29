@@ -12,15 +12,11 @@
       },
       {
         "appID": "EX2HGDA3G8.com.hzyw.mouseReader",
-        "paths": [
-          "/app/reading/*"
-        ]
+        "paths": ["*", "/"]
       },
       {
         "appID": "KXJSQ7VQ52.com.lanqbTeach.www",
-        "paths": [
-          "/lanqb/*"
-        ]
+        "paths": ["*", "/"]
       }
     ]
   }
