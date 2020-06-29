@@ -21,6 +21,7 @@
       {
         "appID": "KXJSQ7VQ52.com.lanqbTeach.www",
         "paths": [
+        "*",
           "/teach/*"
         ]
       }
