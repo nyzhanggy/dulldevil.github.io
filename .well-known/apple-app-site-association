@@ -1,15 +1,29 @@
 {
-    "applinks": {
-        "apps": [],
-        "details": [
-            {
-                "appID": "SS5M7KNCQ2.com.yougechewei.weilaiC",
-                "paths": [ "/app/pay/wechat" ]
-            },
-             {
-                "appID": "EX2HGDA3G8.com.hzyw.mouseReade",
-                "paths": [ "/app/reading/" ]
-            }
+  "applinks": {
+    "apps": [
+      
+    ],
+    "details": [
+      {
+        "appID": "SS5M7KNCQ2.com.yougechewei.weilaiC",
+        "paths": [
+          "*",
+          "/app/pay/wechat"
         ]
-    }
+      },
+      {
+        "appID": "EX2HGDA3G8.com.hzyw.mouseReade",
+        "paths": [
+          "*",
+          "/app/reading/"
+        ]
+      },
+      {
+        "appID": "KXJSQ7VQ52.com.lanqbTeach.www",
+        "paths": [
+          "/teach/*"
+        ]
+      }
+    ]
+  }
 }
