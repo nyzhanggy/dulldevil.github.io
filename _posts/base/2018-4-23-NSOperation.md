@@ -9,7 +9,7 @@ categories: [根深柢固]
 NSOperation是一个抽象类，是OC语言中基于GCD的面向对象的封装。相比GCD来说，面向对象的方式使用起来相对简单，且不用关心线程及线程的生命周期。也提供了一些 GCD 不好实现的功能，比如可以取消在任务处理队列中的任务，添加任务间的依赖关系等等。
 
 ### 1、NSOperation
-NSOperation 是一个抽象类，真正在使用的时候用到的是其相应的子类 NSInvocationOperation 和 NSInvocationOperation，并且也可以自定义 NSOperation 的子类来实现需要的功能。
+NSOperation 是一个抽象类，真正在使用的时候用到的是其相应的子类 NSInvocationOperation 和 NSBlockOperation，并且也可以自定义 NSOperation 的子类来实现需要的功能。
 
 ```
 - (void)operationTest {
