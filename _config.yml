@@ -6,7 +6,7 @@ plugins:
 
 markdown: kramdown
 paginate: 10
-url: https://xporter.club
+url: https://testota.com
 defaults:
   -
     values:
