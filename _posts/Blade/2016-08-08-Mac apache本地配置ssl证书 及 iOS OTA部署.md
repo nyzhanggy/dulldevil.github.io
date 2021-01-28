@@ -106,9 +106,10 @@ SSLSessionCache: 'shmcb' session cache not supported (known names: ).
 Maybe you need to load the appropriate socache module (mod_socache_shmcb?).
 ```
 
-可根据提示进行修改，找到 `/private/etc/apache2/extra/httpd-ssl.conf` 的92行。
+可根据提示进行修改，是需要开启 mod_socache_shmcb 模块；
 
-去掉对应行的注释
+找到 `/private/etc/apache2/extra/httpd.conf`，去掉对应行的注释。
+
 ```
 LoadModule socache_shmcb_module modules/mod_socache_shmcb.so 
 ```
@@ -119,6 +120,19 @@ sudo apachectl restart
 ```
 
 现在就可以通过https访问apache服务了，不过由于是自签名的会有安全警告，手动设置信任就行了。
+
+### 6、403处理
+
+如果出现无法访问的情况，可以调整 httpd.conf 中的配置
+
+```
+<Directory />
+Options FollowSymLinks
+AllowOverride None
+Order deny,allow
+Allow from all
+</Directory>
+```
 
 
 ## 三、OTA部署
