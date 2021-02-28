@@ -76,6 +76,26 @@ DYLD_INSERT_LIBRARIES=dumpdecrypted.dylib  App进程路径
 关于插件的破解，先要理解[dumpdecrypted ](https://github.com/stefanesser/dumpdecrypted)的原理。它的原理是：将应用程序运行起来（iOS系统会先解密程序再启动），然后将内存中的解密结果dump写入文件中，得到一个新的可执行程序。 想要破解哪个应用就在```DYLD_INSERT_LIBRARIES=dumpdecrypted.dylib App进程路径```把进程对应的路径填写进去就行了。
 虽然可以破解，但是我做的时候结果还是用不了 ，控制台的输出为 "插件无效"，况且这个插件也不常用就懒得弄。
 
+
+
+
+如果遇到签名问题导致砸壳失败的，需要给 dumpdecrypted.dylib 进行签名
+
+问题信息
+```
+dumpdecrypted.dylib: code signature in (dumpdecrypted.dylib) not valid for use in process using Library Validation: mapped file has no cdhash, completely unsigned? Code has to be at least ad-hoc signed.
+
+```
+
+签名
+
+```
+## 列出可签名证书
+security find-identity -v -p codesigning
+## 为dumpecrypted.dylib签名
+codesign --force --verify --verbose --sign "iPhone Developer: xxx xxxx (xxxxxxxxxx)" dumpdecrypted.dylib
+```
+
 ## 参考链接：
  [iOS逆向工程(简单利用"dumpdecrypted"给ipa砸壳)](http://www.jianshu.com/p/a4373b5feca0)
 [App Extension的脱壳](https://nianxi.net/ios/dump-decrypted-ios-app-extensions.html)
