@@ -1,12 +1,15 @@
 
-
 {
     "applinks": {
-        "apps": [],
         "details": [
             {
-                "appID": "5794AJP7L5.com.NiudunSafeHouse.app",
-                "paths": [ "*"]
+                "appIDs": ["5794AJP7L5.com.NiudunSafeHouse.app"],
+                "components": [
+                    {
+                        "/": "/*",
+                        "comment": "Matches any URL whose path starts with /content/"
+                    }
+                ]
             }
         ]
     }
