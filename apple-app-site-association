@@ -1,20 +1,31 @@
 {
-	"applinks": {
-		"details": [
-            {
-				"appID": "5794AJP7L5.com.NiudunSafeHouse.app",
-				"components": [{
-					"/": "/*"
-				}],
-				"paths": ["*"]
-			},
-			{
-				"appID": "5794AJP7L5.com.csizg.CSIKeyboard",
-				"components": [{
-					"/": "/*"
-				}],
-				"paths": ["*"]
-			}
-		]
-	}
+  "applinks": {
+    "apps": [
+      
+    ],
+    "details": [
+      {
+        "appID": "5794AJP7L5.com.NiudunSafeHouse.app",
+        "components": [
+          {
+            "/": "/*"
+          }
+        ],
+        "paths": [
+          "*"
+        ]
+      },
+      {
+        "appID": "5794AJP7L5.com.csizg.CSIKeyboard",
+        "components": [
+          {
+            "/": "/*"
+          }
+        ],
+        "paths": [
+          "*"
+        ]
+      }
+    ]
+  }
 }
