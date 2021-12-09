@@ -76,6 +76,8 @@ oclint-json-compilation-database  -e Pods -- -report-type html -o=report.html
 # -o=report.html      输出文件名
 ```
 
+[集成 xcode 使用](https://oclint-docs.readthedocs.io/en/stable/guide/xcode.html)
+
 ### 规则配置
 
 OCLint 的规则可以在命令中之间添加参数来修改默认的值或者不使用某些规则。
@@ -106,6 +108,5 @@ rule-configurations:
 output: oclint.html
 report-type: html
 ```
-
 
 
