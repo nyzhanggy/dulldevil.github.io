@@ -6,7 +6,7 @@ plugins:
 
 markdown: kramdown
 paginate: 10
-url: https://testota.com
+url: https://yydc.xyz
 defaults:
   -
     values:
