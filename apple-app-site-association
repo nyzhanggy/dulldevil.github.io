@@ -1,31 +1,43 @@
+
 {
-  "applinks": {
-    "apps": [
-      
-    ],
-    "details": [
-      {
-        "appID": "5794AJP7L5.com.NiudunSafeHouse.app",
-        "components": [
-          {
-            "/": "/*"
-          }
-        ],
-        "paths": [
-          "*"
+    "applinks": {
+        "apps": [],
+        "details": [
+            {
+                "appID": "5794AJP7L5.com.csizg.secretsim",
+                "components": [
+                    {
+                        "/": "/secretsim/*"
+                    }
+                ],
+            },
+                                    {
+                "appIDs": ["5794AJP7L5.com.NiudunSafeHouse.app"],
+                "components": [
+                    {
+                        "/": "/content/*",
+                        "comment": "Matches any URL whose path starts with /content/"
+                    }
+                ]
+            },
+            {
+                "appIDs": ["5794AJP7L5.com.coreshield.secime"],
+                "components": [
+                    {
+                        "/": "/secime/*",
+                        "comment": "Matches any URL whose path starts with /secime/"
+                    }
+                ]
+            },
+            {
+                "appIDs": ["8PR39AYH4X.com.coreshield.mgime"],
+                "components": [
+                    {
+                        "/": "/mgime/*",
+                        "comment": "Matches any URL whose path starts with /secime/"
+                    }
+                ]
+            }
         ]
-      },
-      {
-        "appID": "5794AJP7L5.com.csizg.CSIKeyboard",
-        "components": [
-          {
-            "/": "/*"
-          }
-        ],
-        "paths": [
-          "*"
-        ]
-      }
-    ]
-  }
+    }
 }
