@@ -12,7 +12,7 @@
                 ]
             },
                                     {
-                "appIDs": ["5794AJP7L5.com.NiudunSafeHouse.app"],
+                "appID": "5794AJP7L5.com.NiudunSafeHouse.app",
                 "components": [
                     {
                         "/": "/content/*",
@@ -21,7 +21,7 @@
                 ]
             },
             {
-                "appIDs": ["8PR39AYH4X.com.coreshield.mgime"],
+                "appID": "8PR39AYH4X.com.coreshield.mgime",
                 "components": [
                     {
                         "/": "/mgime/*",
