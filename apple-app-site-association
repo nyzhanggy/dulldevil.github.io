@@ -1,10 +1,33 @@
+
 {
     "applinks": {
         "apps": [],
         "details": [
             {
-                "appID": "8PR39AYH4X.com.coreshield.mgime",
-                "paths": [ "/mgime"]
+                "appID": "5794AJP7L5.com.csizg.secretsim",
+                "components": [
+                    {
+                        "/": "/secretsim/*"
+                    }
+                ]
+            },
+                                    {
+                "appIDs": ["5794AJP7L5.com.NiudunSafeHouse.app"],
+                "components": [
+                    {
+                        "/": "/content/*",
+                        "comment": "Matches any URL whose path starts with /content/"
+                    }
+                ]
+            },
+            {
+                "appIDs": ["8PR39AYH4X.com.coreshield.mgime"],
+                "components": [
+                    {
+                        "/": "/secime/*",
+                        "comment": "Matches any URL whose path starts with /secime/"
+                    }
+                ]
             }
         ]
     }
