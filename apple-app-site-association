@@ -21,13 +21,8 @@
                 ]
             },
             {
-                "appIDs": ["8PR39AYH4X.com.coreshield.mgime"],
-                "components": [
-                    {
-                        "/": "/secime/*",
-                        "comment": "Matches any URL whose path starts with /secime/"
-                    }
-                ]
+               "appID": "8PR39AYH4X.com.coreshield.mgime",
+               "paths": [ "/mgime"]
             }
         ]
     }
