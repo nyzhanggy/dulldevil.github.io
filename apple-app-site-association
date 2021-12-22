@@ -33,7 +33,7 @@
                 "appIDs": ["8PR39AYH4X.com.coreshield.mgime"],
                 "components": [
                     {
-                        "/": "/secime/*",
+                        "/": "/mgime/*",
                         "comment": "Matches any URL whose path starts with /secime/"
                     }
                 ]
