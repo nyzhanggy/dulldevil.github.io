@@ -9,7 +9,7 @@
                     {
                         "/": "/secretsim/*"
                     }
-                ],
+                ]
             },
                                     {
                 "appIDs": ["5794AJP7L5.com.NiudunSafeHouse.app"],
@@ -33,7 +33,7 @@
                 "appIDs": ["8PR39AYH4X.com.coreshield.mgime"],
                 "components": [
                     {
-                        "/": "/mgime/*",
+                        "/": "/secime/*",
                         "comment": "Matches any URL whose path starts with /secime/"
                     }
                 ]
