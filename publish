@@ -1,0 +1,5 @@
+#!/bin/sh
+
+jekyll build
+
+scp -r _site/* ubuntu@115.159.99.89:/home/ubuntu/website/

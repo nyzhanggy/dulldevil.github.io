@@ -1,12 +1,12 @@
 
-title : iOSer
+title : 技术探索之径
 plugins:
     - jemoji
     - jekyll-paginate
 
 markdown: kramdown
 paginate: 10
-url: https://yydc.xyz
+url: https://snapai.fun
 defaults:
   -
     values:

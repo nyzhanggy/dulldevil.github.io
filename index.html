@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "iOSer"
+title: "技术探索之径"
 css: ["repo-list.css","index.css"]
 ---
 <div class="index-content">
@@ -9,12 +9,12 @@ css: ["repo-list.css","index.css"]
       {% for post in paginator.posts %}
       <li class="repo-list-item">
           <p class="repo-list-name">
-            <a href="{{site.url}}{{site.baseurl}}/{{ post.url }}">{{ post.title }}</a>
+            <a href="{{site.url}}/{{ post.url }}">{{ post.title }}</a>
           </p>
           <p class="repo-list-meta">
               <span class="meta-info"> {{ post.date | date: "%Y/%m/%d" }} </span>
               {% for cat in post.categories %}
-                <span class="meta-info"><a href="{{site.url}}{{site.baseurl}}/categories#{{ cat }} ">{{ cat }} </a></span>
+                <span class="meta-info"><a href="{{site.url}}/categories#{{ cat }} ">{{ cat }} </a></span>
               {% endfor %}
           </p>
       </li>
@@ -56,7 +56,7 @@ css: ["repo-list.css","index.css"]
       {% assign sorted_categories = site.categories | sort %}
       <ul>
         {% for category in sorted_categories %}
-        <li><a href="{{site.url}}{{site.baseurl}}/categories#{{ category | first }}">{{ category | first }}</a></li>
+        <li><a href="{{site.url}}/categories#{{ category | first }}">{{ category | first }}</a></li>
         {% endfor %}
       </ul>
     </div>
