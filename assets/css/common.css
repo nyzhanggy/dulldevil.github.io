@@ -1,4 +1,4 @@
-body,html { margin: 0; width:100vw;overflow-x:hidden;}
+body,html { margin: 0; width:100vw;overflow-x:hidden; height: 100%;}
 
 html { font-family: Arial, "Hiragino Sans GB", 冬青黑, "Microsoft YaHei", 微软雅黑, SimSun, 宋体, Helvetica, Tahoma, "Arial sans-serif"; font-weight: 400;}
 
