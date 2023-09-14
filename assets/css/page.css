@@ -7,6 +7,13 @@
   text-align: center;
   color: #000;
   padding: 10px 20px;
-  
   z-index: 9999;
+}
+
+#icp a {
+  color: #939393;
+  text-decoration: none;
+}
+#icp * {
+  vertical-align: middle;
 }
